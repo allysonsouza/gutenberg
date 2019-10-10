@@ -85,5 +85,15 @@ $colors-selector-size: 22px;
 .editor-block-colors-selector__popover {
 	.color-palette-controller-container {
 		padding: 16px;
+
+		.components-base-control__label {
+			height: 20px;
+			line-height: 20px;
+
+			.component-color-indicator {
+				float: right;
+				margin-top: 2px;
+			}
+		}
 	}
 }
