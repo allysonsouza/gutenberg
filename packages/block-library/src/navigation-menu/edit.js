@@ -51,15 +51,10 @@ function NavigationMenu( {
 				return null;
 			}
 			return pages.map( ( page ) => {
-				return [ 'core/navigation-menu-item',
-					{
-						label: page.title.rendered,
-						destination: page.permalink_template,
-						styles: { color: textColor } },
-				];
+				return [ 'core/navigation-menu-item', { label: page.title.rendered,  destination: page.permalink_template } ];
 			} );
 		},
-		[ pages, textColor ]
+		[ pages ]
 	);
 
 	const colorsSelectorProps = {
