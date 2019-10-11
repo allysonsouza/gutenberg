@@ -110,17 +110,15 @@ function NavigationMenu( {
   					/>
 				</PanelBody>
 			</InspectorControls>
-			<div className={ navigationMenuClasses }>
+			<div className={ navigationMenuClasses } style={ navigationMenuStyles}>
 				{ isRequesting &&
 					<Spinner />
 				}
 				{ pages &&
-					<div style={ navigationMenuStyles}>
-						<InnerBlocks
-							template={ defaultMenuItems ? defaultMenuItems : null }
-							allowedBlocks={ [ 'core/navigation-menu-item' ] }
-						/>
-					</div>
+					<InnerBlocks
+						template={ defaultMenuItems ? defaultMenuItems : null }
+						allowedBlocks={ [ 'core/navigation-menu-item' ] }
+					/>
 				}
 			</div>
 		</Fragment>
