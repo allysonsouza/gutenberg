@@ -90,6 +90,8 @@ registerBlockType( 'gutenberg-examples/example-05-dynamic', {
 			{ post.title.rendered }
 		</a>;
 	} ),
+	
+	save: () => { return null }
 } );
 ```
 {% end %}
