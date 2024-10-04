@@ -144,7 +144,7 @@ registerPlugin( 'example-restrict-post-types', {
 } );
 ```
 
-### Restricting fills to the Side Editor
+### Restricting fills to the Site Editor
 
 To restrict fills to the Site Editor, the reverse logic is true. If the post type object's `viewable` property is set to `true`, then the fill should not be rendered. The example below will render its content on any Site Editor screen.
 
